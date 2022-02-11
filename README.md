@@ -1,4 +1,4 @@
 # the_catch
-Kevin Woo  
-Abraham Romero  
-Jihyun Eom  
+Kevin Woo - coolical  
+Abraham Romero - aberomero999
+Jihyun Eom - Castelle21
