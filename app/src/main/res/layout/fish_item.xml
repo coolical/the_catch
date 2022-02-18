@@ -30,13 +30,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="80dp"
         android:layout_weight="1"
-        android:text="@string/button_text" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="@string/fish_button_text" />
 
 </LinearLayout>

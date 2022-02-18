@@ -23,9 +23,9 @@
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
     <fragment
-        android:id="@+id/locationFragment"
-        android:name="com.example.the_catch.LocationFragment"
-        android:label="location_item_list"
-        tools:layout="@layout/location_item_list" />
+        android:id="@+id/fishFragment"
+        android:name="com.example.the_catch.FishFragment"
+        android:label="fish"
+        tools:layout="@layout/fish_item_list" />
 
 </navigation>

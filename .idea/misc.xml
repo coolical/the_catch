@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/coolical/AndroidStudioProjects/the_catch/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/coolical/AndroidStudioProjects/the_catch/app/src/main/res/layout/fish_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/coolical/AndroidStudioProjects/the_catch/app/src/main/res/layout/fish_item_list.xml" value="0.21331521739130435" />
         <entry key="..\:/Users/coolical/AndroidStudioProjects/the_catch/app/src/main/res/layout/fragment_dashboard.xml" value="0.33" />
         <entry key="..\:/Users/coolical/AndroidStudioProjects/the_catch/app/src/main/res/layout/fragment_home.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/coolical/AndroidStudioProjects/the_catch/app/src/main/res/layout/fragment_location_list.xml" value="0.1" />

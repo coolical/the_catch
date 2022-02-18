@@ -17,7 +17,7 @@ import com.example.the_catch.data.DataSource
  */
 class LocationCardAdapter (private val locationId: String, private val context: Context) :
     RecyclerView.Adapter<LocationCardAdapter.LocationViewHolder>() {
-    private val dataset = DataSource.locs
+    private val dataset = DataSource.fishs
     class LocationViewHolder(val view: View?) : RecyclerView.ViewHolder(view!!){
         val image: ImageView? = view?.findViewById(R.id.image)
         val name: TextView? = view?.findViewById(R.id.name)
@@ -25,7 +25,7 @@ class LocationCardAdapter (private val locationId: String, private val context: 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LocationViewHolder {
-        var listItem = R.layout.location_item
+        var listItem = R.layout.fish_item
         val adapterLayout = LayoutInflater.from(parent.context).inflate(listItem, parent, false)
         return LocationViewHolder(adapterLayout)
     }

@@ -9,13 +9,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.the_catch.data.DataSource
-import com.example.the_catch.model.Location
-import com.example.the_catch.placeholder.PlaceholderContent
 
 /**
  * A fragment representing a list of Items.
  */
-class LocationFragment : Fragment() {
+class FishFragment : Fragment() {
 
     private var columnCount = 1
 
@@ -31,7 +29,7 @@ class LocationFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.location_item_list, container, false)
+        val view = inflater.inflate(R.layout.fish_item_list, container, false)
 
         // Set the adapter
         if (view is RecyclerView) {
@@ -40,7 +38,7 @@ class LocationFragment : Fragment() {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
-                adapter = MyLocationRecyclerViewAdapter(DataSource.locs)
+                adapter = MyFishRecyclerViewAdapter(context,DataSource.fishs)
             }
         }
         return view
@@ -54,7 +52,7 @@ class LocationFragment : Fragment() {
         // TODO: Customize parameter initialization
         @JvmStatic
         fun newInstance(columnCount: Int) =
-            LocationFragment().apply {
+            FishFragment().apply {
                 arguments = Bundle().apply {
                     putInt(ARG_COLUMN_COUNT, columnCount)
                 }

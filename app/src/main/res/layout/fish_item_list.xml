@@ -9,5 +9,5 @@
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
     app:layoutManager="LinearLayoutManager"
-    tools:context=".LocationFragment"
-    tools:listitem="@layout/location_item" />
+    tools:context=".FishFragment"
+    tools:listitem="@layout/fish_item" />

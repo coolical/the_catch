@@ -1,17 +1,14 @@
 package com.example.the_catch.data
 
 import com.example.the_catch.R
-import com.example.the_catch.model.Location
+import com.example.the_catch.model.Fish
 
 object DataSource {
-    val locs: List<Location> = listOf(
-        Location(
-            R.drawable.lake,
-            "Colorado"
-        ),
-        Location(
-            R.drawable.lake,
-            "Colorado2"
+    val fishs: List<Fish> = listOf(
+        Fish(
+            R.drawable.fish,
+            "artichoke",
+            1
         )
     )
 }
