@@ -6,4 +6,6 @@
     <string name="locations">Locations</string>
     <string name="cart">Cart</string>
     <string name="fish">Fish</string>
+    <string name="fish_button_text">Add %1$d points</string>
+    <string name="alt_text">Image by %1$s</string>
 </resources>
