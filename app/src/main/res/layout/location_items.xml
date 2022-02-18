@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-
-    <ImageView
-        android:id ="@+id/image_item"
-        android:layout_width="match_parent"
-        android:layout_height="194dp"
-        android:importantForAccessibility="no"
-        android:scaleType="centerCrop" />
-
 
 
     <TextView
@@ -19,4 +12,43 @@
         android:layout_height="wrap_content">
 
     </TextView>
+
+    <ImageButton
+        android:id="@+id/LSR"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/lake_sam_rayburn" />
+
+
+
+    <ImageButton
+        android:id="@+id/LFR"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/lake_fork_reservoir" />
+
+    <ImageButton
+        android:id="@+id/LRH"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/lake_ray_hubbard" />
+
+    <ImageButton
+    android:id="@+id/LC"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:srcCompat="@drawable/lake_conroe" />
+
+    <ImageButton
+        android:id="@+id/GB"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/galveston_bay" />
+
+    <ImageView
+        android:id ="@+id/image_item"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop" />
 </LinearLayout>
