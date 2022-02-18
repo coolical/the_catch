@@ -8,7 +8,8 @@ object DataSource {
         Fish(
             R.drawable.fish,
             "artichoke",
-            1
+            1,
+            "Freepik"
         )
     )
 }

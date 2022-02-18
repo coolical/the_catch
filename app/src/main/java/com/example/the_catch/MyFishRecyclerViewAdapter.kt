@@ -11,6 +11,7 @@ import android.widget.TextView
 import com.example.the_catch.placeholder.PlaceholderContent.PlaceholderItem
 import com.example.the_catch.databinding.FishItemBinding
 import com.example.the_catch.model.Fish
+import org.w3c.dom.Text
 
 /**
  * [RecyclerView.Adapter] that can display a [PlaceholderItem].
@@ -38,6 +39,7 @@ class MyFishRecyclerViewAdapter(
         val item = values[position]
         holder.nameView?.text = item.name
         holder.imageView?.setImageResource(item.imageResourceId)
+        holder.alt?.text = resources?.getString(R.string.alt_text, item.alt)
         holder.button?.text = resources?.getString(R.string.fish_button_text, item.price)
     }
 
@@ -47,6 +49,7 @@ class MyFishRecyclerViewAdapter(
         val nameView: TextView = binding.name
         val imageView: ImageView = binding.imageView
         val button: Button = binding.button
+        val alt: TextView = binding.alt
     }
 
 }

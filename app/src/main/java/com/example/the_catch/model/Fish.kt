@@ -6,5 +6,6 @@ class Fish (
     @DrawableRes
     val imageResourceId: Int,
     val name: String,
-    val price: Int
+    val price: Int,
+    val alt: String
         )
