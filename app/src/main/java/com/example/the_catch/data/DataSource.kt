@@ -8,9 +8,33 @@ object DataSource {
     val fishs: List<Fish> = listOf(
         Fish(
             R.drawable.fish,
+            1,
             "artichoke",
             1,
             "Freepik"
+        )
+    )
+
+    val lakes: List<Lake> = listOf(
+        Lake(
+            R.drawable.galveston_bay,
+            1
+        ),
+        Lake(
+            R.drawable.lake_conroe,
+            2
+        ),
+        Lake(
+            R.drawable.lake_fork_reservoir,
+            3
+        ),
+        Lake(
+            R.drawable.lake_ray_hubbard,
+            4
+        ),
+        Lake(
+            R.drawable.lake_sam_rayburn,
+            5
         )
     )
 }

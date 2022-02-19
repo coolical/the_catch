@@ -50,6 +50,7 @@ class MyFishRecyclerViewAdapter(
         val imageView: ImageView = binding.imageView
         val button: Button = binding.button
         val alt: TextView = binding.alt
+
     }
 
 }

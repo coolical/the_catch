@@ -5,6 +5,8 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.annotation.TransitionRes
 
-data class Lake (@DrawableRes val imageResourceId: Int){
-
-}
+data class Lake (
+    @DrawableRes
+    val imageResourceId: Int,
+    val id: Int
+)

@@ -9,7 +9,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.the_catch.data.Datasource2
+// import com.example.the_catch.data.Datasource2
 import com.example.the_catch.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

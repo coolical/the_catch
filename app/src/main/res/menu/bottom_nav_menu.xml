@@ -19,5 +19,9 @@
         android:id="@+id/fishFragment"
         android:icon="@drawable/ic_home_black_24dp"
         android:title="fish"/>
+    <item
+        android:id="@+id/lakeFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="lake"/>
 
 </menu>
