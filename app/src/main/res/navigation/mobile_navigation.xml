@@ -2,8 +2,9 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/navigation_home">
+    app:startDestination="@id/lakeFragment">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -27,7 +28,11 @@
         android:id="@+id/fishFragment"
         android:name="com.example.the_catch.FishFragment"
         android:label="fish"
-        tools:layout="@layout/fish_item_list" />
+        tools:layout="@layout/fish_item_list" >
+        <argument
+            android:name="lakeId"
+            app:argType="integer" />
+    </fragment>
 
     <fragment
         android:id="@+id/lakeFragment"

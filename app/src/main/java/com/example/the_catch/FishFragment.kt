@@ -17,11 +17,14 @@ class FishFragment : Fragment() {
 
     private var columnCount = 1
 
+    private var lakeId = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         arguments?.let {
             columnCount = it.getInt(ARG_COLUMN_COUNT)
+            lakeId = it.getInt("lakeId")
         }
     }
 
@@ -38,7 +41,7 @@ class FishFragment : Fragment() {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
-                adapter = MyFishRecyclerViewAdapter(context,DataSource.fishs)
+                adapter = MyFishRecyclerViewAdapter(context, lakeId)
             }
         }
         return view

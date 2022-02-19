@@ -5,7 +5,7 @@ import androidx.annotation.DrawableRes
 class Fish (
     @DrawableRes
     val imageResourceId: Int,
-    val lakeId: Int,
+    val from: Int,
     val name: String,
     val price: Int,
     val alt: String
