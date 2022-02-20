@@ -11,30 +11,44 @@ object DataSource {
             1,
             "artichoke",
             1,
-            "Freepik"
+            "Freepik",
+            0
+        ),
+        Fish(
+            R.drawable.fish,
+            1,
+            "cod",
+            1,
+            "No source",
+            0
         )
     )
 
     val lakes: List<Lake> = listOf(
         Lake(
             R.drawable.galveston_bay,
-            1
+            1,
+            0
         ),
         Lake(
             R.drawable.lake_conroe,
-            2
+            2,
+            0
         ),
         Lake(
             R.drawable.lake_fork_reservoir,
-            3
+            3,
+            0
         ),
         Lake(
             R.drawable.lake_ray_hubbard,
-            4
+            4,
+            0
         ),
         Lake(
             R.drawable.lake_sam_rayburn,
-            5
+            5,
+            0
         )
     )
 }

@@ -8,5 +8,6 @@ import androidx.annotation.TransitionRes
 data class Lake (
     @DrawableRes
     val imageResourceId: Int,
-    val id: Int
+    val id: Int,
+    var points: Int
 )

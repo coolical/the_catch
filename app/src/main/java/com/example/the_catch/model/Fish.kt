@@ -8,5 +8,6 @@ class Fish (
     val from: Int,
     val name: String,
     val price: Int,
-    val alt: String
+    val alt: String,
+    var qty: Int
     )
