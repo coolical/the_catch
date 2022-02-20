@@ -43,5 +43,10 @@
             android:id="@+id/action_lakeFragment_to_fishFragment"
             app:destination="@id/fishFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/pointFragment"
+        android:name="com.example.the_catch.PointFragment"
+        android:label="fragment_point"
+        tools:layout="@layout/fragment_point" />
 
 </navigation>
