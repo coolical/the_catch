@@ -10,8 +10,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myapplication.model.Lake
 import com.example.the_catch.R
+import com.example.the_catch.data.Lake
 
 class ItemAdapter (private val context: Context,
                    private val dataset: List<Lake>) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {

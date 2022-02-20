@@ -8,4 +8,6 @@
     <string name="fish">Fish</string>
     <string name="fish_button_text">Add %1$d points</string>
     <string name="alt_text">Image by %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

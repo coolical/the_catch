@@ -13,18 +13,15 @@ import com.example.the_catch.data.DataSource
 /**
  * A fragment representing a list of Items.
  */
-class FishFragment : Fragment() {
+class LakeFragment : Fragment() {
 
     private var columnCount = 1
-
-    private var lakeId = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         arguments?.let {
             columnCount = it.getInt(ARG_COLUMN_COUNT)
-            lakeId = it.getInt("lakeId")
         }
     }
 
@@ -32,7 +29,7 @@ class FishFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fish_item_list, container, false)
+        val view = inflater.inflate(R.layout.lake_item_list, container, false)
 
         // Set the adapter
         if (view is RecyclerView) {
@@ -41,7 +38,7 @@ class FishFragment : Fragment() {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
-                adapter = MyFishRecyclerViewAdapter(context, lakeId)
+                adapter = MyLakeRecyclerViewAdapter(context,DataSource.lakes, view)
             }
         }
         return view
@@ -55,7 +52,7 @@ class FishFragment : Fragment() {
         // TODO: Customize parameter initialization
         @JvmStatic
         fun newInstance(columnCount: Int) =
-            FishFragment().apply {
+            LakeFragment().apply {
                 arguments = Bundle().apply {
                     putInt(ARG_COLUMN_COUNT, columnCount)
                 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
+    <!--<item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
         android:title="@string/title_home" />
@@ -15,9 +15,19 @@
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="@string/title_notifications" />
+-->
     <item
+        android:id="@+id/lakeFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="lake"/>
+
+    <item
+        android:id="@+id/pointFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="points"/>
+    <!--<item
         android:id="@+id/fishFragment"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="fish"/>
+        android:title="fish"/>-->
 
 </menu>
