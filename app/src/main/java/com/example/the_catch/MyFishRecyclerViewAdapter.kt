@@ -8,13 +8,11 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.the_catch.data.DataSource
-
-import com.example.the_catch.placeholder.PlaceholderContent.PlaceholderItem
 import com.example.the_catch.databinding.FishItemBinding
 import com.example.the_catch.model.Fish
 
 /**
- * [RecyclerView.Adapter] that can display a [PlaceholderItem].
+ * [RecyclerView.Adapter] that can display a [Fish].
  * TODO: Replace the implementation with code for your data type.
  */
 class MyFishRecyclerViewAdapter(
