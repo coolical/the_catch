@@ -6,9 +6,8 @@
     <string name="locations">Locations</string>
     <string name="cart">Cart</string>
     <string name="fish">Fish</string>
-    <string name="lake_button_text">You have %1$d point(s) here</string>
+    <string name="fish_button_text">Add %1$d points</string>
     <string name="alt_text">Image by %1$s</string>
     <string name="fish_name_price">%1$s\nValue: %2$d</string>
     <string name="fish_qty">Qty: %1$d</string>
-    <string name="hello_blank_fragment">Hello world</string>
 </resources>
