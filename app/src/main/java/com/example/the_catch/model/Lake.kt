@@ -11,3 +11,4 @@ data class Lake (
     val id: Int,
     var points: Int
 )
+

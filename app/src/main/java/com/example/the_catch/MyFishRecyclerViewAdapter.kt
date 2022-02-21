@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.the_catch.data.DataSource
+import com.example.the_catch.data.Lake
 import com.example.the_catch.databinding.FishItemBinding
 import com.example.the_catch.model.Fish
 
@@ -20,6 +21,7 @@ class MyFishRecyclerViewAdapter(
 ) : RecyclerView.Adapter<MyFishRecyclerViewAdapter.ViewHolder>() {
 
     private val filteredFish: MutableList<Fish> = mutableListOf()
+    private var parentLake: Lake
 
     init{
         val values = DataSource.fishs
@@ -28,6 +30,8 @@ class MyFishRecyclerViewAdapter(
                 filteredFish.add(fish)
             }
         }
+        val lakes = DataSource.lakes
+        parentLake = lakes.first { it.id == lakeId }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -51,11 +55,13 @@ class MyFishRecyclerViewAdapter(
         holder.add.setOnClickListener {
             item.qty += 1
             holder.qty.text = resources?.getString(R.string.fish_qty, item.qty)
+            parentLake.points += item.price
         }
         holder.sub.setOnClickListener {
             if (item.qty > 0) {
                 item.qty -= 1
                 holder.qty.text = resources?.getString(R.string.fish_qty, item.qty)
+                parentLake.points -= item.price
             }
         }
     }

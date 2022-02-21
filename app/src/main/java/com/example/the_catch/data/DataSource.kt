@@ -18,7 +18,15 @@ object DataSource {
             R.drawable.fish,
             1,
             "cod",
-            1,
+            2,
+            "No source",
+            0
+        ),
+        Fish(
+            R.drawable.fish,
+            2,
+            "goldfish",
+            3,
             "No source",
             0
         )
